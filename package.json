@@ -1,0 +1,19 @@
+{
+	"name": "bright-horizon",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.21.1",
+		"file-type": "^16.5.0",
+		"moment": "^2.29.1",
+		"piexifjs": "^1.0.6",
+		"sharp": "^0.28.3"
+	}
+}
