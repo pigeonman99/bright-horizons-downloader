@@ -1,5 +1,5 @@
 # Bright Horizons Downloader
-This nodejs script allows you to connect to the Bright Horizons' API and retrieve photos and videos for your kids.
+This nodejs script helps you connect to Bright Horizons' API and download photos and videos for your kids.
 
 The script also performs the following:
 1. If the pictures downloaded are of type PNG (which seems to be the case for all pictures downloaded at this time), convert them to JPEG.
@@ -9,7 +9,7 @@ The script also performs the following:
 # Usage
 1. Clone this repo.
 2. Run `npm install` to install all dependencies required.
-3. Run `% node bright-horizons-downloader.js [Date] [End of Period] [Magic Cookie]` to retrieve photos & videos for your kids. (see below on how to obtain the "Magic Cookie")
+3. Run `% node bright-horizons-downloader.js [Date] [End of Period] [Magic Cookie]` to download photos & videos for your kids. (see below on how to obtain the "Magic Cookie")
 
 For example, the following will download all of your kids' photos and videos for the month of May, 2021:
 
