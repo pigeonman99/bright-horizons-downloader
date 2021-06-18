@@ -7,7 +7,9 @@ The script also performs the following:
 3. Files are named as `YYYY-MM-DD NUM.(jpg|mp4)`.
 
 # Usage
-`% node bright-horizons-downloader.js [Date] [End of Period] [Magic Cookie]`
+1. Clone this repo.
+2. Run `npm install` to install all dependencies required.
+3. Run `% node bright-horizons-downloader.js [Date] [End of Period] [Magic Cookie]` to retrieve photos & videos for your kids. (see below on how to obtain the "Magic Cookie")
 
 For example, the following will download all of your kids' photos and videos for the month of May, 2021:
 
@@ -21,3 +23,10 @@ This example below will download all of your kids' photos and videos for the wee
 1. Login to your account at: https://familyinfocenter.brighthorizons.com/
 2. Launch "My Bright Day"
 3. Open your browser's debugger and grab the cookie named "DgU00" for the domain "mybrightday.brighthorizons.com". This will be the magic cookie you use on the command.
+
+# About This Script
+After manually downloading photos from Bright Horizons' "My Bright Day" website for a few months, I got really tired of the repetition and so decided to create a script to automate it.
+
+I took reference from https://github.com/txchen/brightday-dl when writing this script.
+
+It is possible to enhance this script to programmatically obtain the "Magic Cookie" via username/password, but I didn't have the time to figure this part out (it's pretty easy to grab it from browser's debugger anyway).
