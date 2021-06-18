@@ -12,7 +12,7 @@ const axios = require('axios'),
   let res = await axios.get(`https://mybrightday.brighthorizons.com/remote/v1/events?direction=range&earliest_event_time=${startDate.unix()}&latest_event_time=${endDate.unix()}&num_events=300&client=dashboard`, {headers: {'cookie': cookie}});
   const events = res.data.events;
   const activities = events.filter(e => e.type === 'Activity').sort((a, b) => a.event_time - b.event_time);
-  console.log(`${activities.length} media files found.`);
+  console.log(`${activities.length} media records found.`);
   let count = 0;
   for (const activity of activities) {
     const fileName = moment(activity.event_time, 'X').format('YYYY-MM-DD');
