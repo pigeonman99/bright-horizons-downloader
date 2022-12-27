@@ -40,7 +40,7 @@ function modifyExif(data, activity) {
   let eventTime = moment(activity.event_time, 'X');
   const exifDateTime = eventTime.format('YYYY:MM:DD HH:mm:ss');
   const exifObj = piexif.load(data);
-  exifObj.Exif[piexif.ExifIFD.DateTimeOriginal] = exifDateTime;
+  exifObj.Exif[piexif.ExifIFD.DateTimeOriginal] = exifObj.Exif[piexif.ExifIFD.DateTimeDigitized] = exifObj['0th'][piexif.ImageIFD.DateTime] = exifDateTime;
   if (activity.comment) {
     exifObj['0th'][piexif.ImageIFD.ImageDescription] = activity.comment.trim();
   }
